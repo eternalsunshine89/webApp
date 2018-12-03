@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>雷盘</title>
+	<link rel="stylesheet" type="text/css" href="扫雷.css">
+	<script src="jquery.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="startBtn"></div>
+	<div class="bombOver">当前剩余雷数：<span class="num"></span></div>
+	<ul class="gameArea"></ul>
+	<div class="alertBox">
+		<div class="alertImg">
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="扫雷.js"></script>
+<script>
+	$(function() {
+		$(".num").click(function() {
+			$(".bomb").css("background-color", "rgba(255, 60, 255, 0.8)");
+		});
+});
+</script>
+
+</body>
+</html>
